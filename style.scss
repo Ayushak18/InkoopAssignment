@@ -1,0 +1,318 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Common Styles */
+
+body {
+  background: #fafafa;
+  /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 3.5rem;
+}
+
+.mobile-aside {
+  display: none;
+}
+
+// Specific Style
+
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  .aside {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      font-weight: 900;
+    }
+
+    ul {
+      a {
+        display: inline-block;
+        margin: 0 0 2.5rem 0;
+        color: #717171;
+        text-decoration: none;
+      }
+    }
+
+    .cart-link {
+      display: inline-block;
+      margin: 2rem 0;
+      background: #f04b4b;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 1rem 3rem;
+      border-radius: 1.5rem;
+    }
+  }
+}
+
+.hero-section {
+  padding: 3rem 0rem 3rem 5rem;
+  line-height: 1.5;
+  .hero-center {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      flex: 0 1 70%;
+    }
+    .hero-para-div {
+      flex: 0 1 20%;
+      p {
+        color: #717171;
+      }
+      .hero-para-border {
+        margin: 1rem 0;
+        width: 30%;
+        border-bottom: 0.2rem solid red;
+        border-radius: 20rem;
+      }
+    }
+  }
+}
+
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+
+  .menu-card {
+    background: #ffffff;
+    margin: 3rem 0rem 3rem 0;
+
+    padding: 1.4rem 1.6rem;
+    box-shadow: 0rem 0.5rem 1.5rem 0.5rem rgb(221, 221, 221);
+    border-radius: 0.8rem;
+    img {
+      border-radius: 50%;
+      width: 7.5rem;
+      height: 7.5rem;
+      margin-bottom: 1.2rem;
+    }
+    .menu-card-name {
+      font-weight: 700;
+    }
+  }
+}
+
+// Style for 786px
+
+@media screen and (max-width: 786px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    display: inline-block;
+    padding: 2rem 0;
+  }
+
+  //   Specific Styles
+  .aside {
+    display: none;
+  }
+
+  .mobile-aside {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    i {
+      display: inline-block;
+      color: #f04b4b;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+  }
+
+  .mobile-hero-section {
+    padding: 2rem;
+    .mobile-hero-center {
+      display: block;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    display: inline-block;
+    padding: 2rem 0;
+  }
+
+  //   Specific Styles
+  .aside {
+    display: none;
+  }
+
+  .mobile-aside {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    i {
+      display: inline-block;
+      color: #f04b4b;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+  }
+
+  .mobile-hero-section {
+    padding: 2rem;
+    .mobile-hero-center {
+      display: block;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
